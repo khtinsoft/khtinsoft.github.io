@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://khtinsokft.netlify.com',
+  title: 'Blog by khtinsoft',
+  subtitle: 'Blogs for developments and divings.',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
+  disqusShortname: 'khtinsoft',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-120914821-1',
   menu: [
     {
       label: 'Articles',
@@ -23,16 +23,12 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'khtinsoft',
+    photo: '/profile.jpg',
+    bio: 'Gelato Lab Inc',
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'khtinsoft@gmail.com',
+      github: 'https://github.com/khtinsoft/',
     }
   }
 };

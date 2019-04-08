@@ -3,10 +3,14 @@ title: "About me"
 template: "page"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+## Careers
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+(2018. 10 ~ ) Software Engineer at Gelato Lab Inc  
+(2018. 06 ~ 2018. 10) Software Engineer at EPIKAR Inc  
+(2016. 02 ~ 2018. 06) CTO/CSO at KUKKA Inc  
+(2014. 02 ~ 2016. 02) Research Engineer at HAE Research Center, CTO Division, LG Electronics  
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+## Education
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+(2012. 03 ~ 2014. 02) MS at School of Electrical Engineering, Korea University  
+(2006. 03 ~ 2012. 02) BS at School of Electrical Engineering, Korea University

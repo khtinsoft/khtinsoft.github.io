@@ -43,19 +43,15 @@ export const Sidebar = (props) => (
               photo
               bio
               contacts {       
-                twitter
-                telegram
                 github
                 email
-                rss
-                vkontakte
               }
             }
           }
         }
       }
     `}
-    render={(data) => <PureSidebar {...props} data={data}/>}
+    render={(data) => <PureSidebar {...props} data={data} />}
   />
 );
 
