@@ -14,11 +14,6 @@ tags:
 description: "Ubuntu 18.04 서버에 ELK (ElasticSearch-LogStash-Kibana) 스택을 구성한다. S3에 적재되고 있는 Load Balance의 로그 파일을 확인한다."
 ---
 
-<!-- - [The first transition](#the-first-transition)
-- [The digital age](#the-digital-age)
-- [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
-- [Chasing perfection](#chasing-perfection) -->
-
 
 ## Introduction
 
