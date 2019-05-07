@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://khtinsoft.netlify.com',
+  url: 'https://blog.khtinsoft.xyz',
   title: 'Blog by khtinsoft',
   subtitle: 'Blogs for developments and divings.',
   copyright: '© All rights reserved.',
