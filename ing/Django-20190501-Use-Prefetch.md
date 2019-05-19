@@ -1,33 +1,46 @@
 ---
-title: Django ORM Prefetch 사용하기
-date: "2019-05-01"
+title: Docker로 Django, Celery, Maria DB, Redis 개발 환경 설정하기
+date: "2019-05-19"
 template: "post"
 draft: false
-slug: "/posts/django-orm-prefetch/"
+slug: "/posts/django-celery-mariadb-redis-docker/"
 category: "Framework/Django"
 tags:
   - "Django"
-  - "Django ORM"
-  - "ORM"
-  - "Web"
-  - "Backend"
-  - "Database"
-  - "sql"
-description: "Django ORM의 Prefetch를 통한 데이터베이서 쿼리 최적화"
+  - "Celery"
+  - "Maria DB"
+  - "Redis"
+  - "Docker"
+  - "Docker Compose"
+description: "Docker, Docker Compose를 활용하여, Django/Celery/Maria DB/Redis 전체 개발 환경 셋팅하기"
 ---
 
 
 ## Introduction
 
-Django의 ORM은 간단한 Relation Database를 객체(Object)의 형태로 접근 가능하도록 한다.
-이는 *빠른 개발/프로그래밍 적인 데이터의 접근*이 가능하지만, 잘못 사용하면 *데이터베이스의 최적화* 관점에서 좋지 못할 수 있다.
+Docker를 사용하여 로컬에 개발 환경을 만들어 사용하는 방식이 대부분 업계 표준으로 자리 잡고 있는 듯 하고, 더 나아가 실제 서비스 배포에까지 적용하는 곳이 점점 늘어나고 있는 듯 한다. 
 
-데이터베이스 최적화를 위해 Django는 몇가지 API를 제공하는데, 그 중 Prefetch에 대해 알아본다. 
+이번 포스트에서는, Docker 및 Docker Compose 로 Django Project의 개발 환경을 만들고, 개발에 사용하기 위한 방법을 소개한다.
 
 
 ## Prerequisites
 
-이 글은 Django 2.2, Python 3.6.7, Maria DB 10.3.11 버전을 기준으로 한다. 
+이 포스트에서는 Django, Celery, Maria DB, Redis의 4가지 서비스를 서버 어플리케이션을 위해 적용한다.
+각각은 서버 내에서 다음의 역할을 수행한다.
+
+> #### Django
+> Django는 Main Server로써의 기능을 한다. 사용자의 부터의 Request를 처리하여, 적절한 응답을 Response 한다.
+> #### Celery
+> Celery는 Python에서 널리 사용되는 비동기 Task 및 Batch 프로세싱을 위한 Message Queue 기능을 제공한다. 
+> #### Maria DB
+> MySQL과 거의 호환 가능한 Open Source Database
+> #### Redis
+> Redis는 매우 경량화된 In-Memory Database이다. 필자는 Django Project 내에서 Cache의 목적으로 Redis를 주로 활용하며, Django Application과 Celery간의 통신을 위한 Message Broker로 Redis를 활용한다.
+
+
+
+
+
 
 게시판의 기능을 하는 Application을 가정하여, Prefetch의 사용 방법에 대해 소개한다. 
 

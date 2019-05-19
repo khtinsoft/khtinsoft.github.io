@@ -44,7 +44,8 @@ description: "모알 보알 다이빙 1일차. 정어리와 전기 조개"
 마스터가 열심히 불빛을 비추어주고, 난 열심히 촬영했다.  
 조그마한 조개였지만, 참 경이로웠고 이게 뭔가 싶었다.. ㅎㅎ
 
-{% include youtube.html id="THCTu668C7k" %}
+`youtube:https://www.youtube.com/embed/THCTu668C7k`
+
 (정말.. 정말 신기하다..)
 
 ## 3. 점심 식사
@@ -82,8 +83,10 @@ description: "모알 보알 다이빙 1일차. 정어리와 전기 조개"
 미친듯이 날뛰는 정어리떼의 스쿨링은 느낌이 많이 달랐다.  
 이정도 만으로도 충분히 멋있었는데, 다이빙 후 하시는 말씀들이 '너무 적었다'라고...
 
-{% include youtube.html id="sD84oesqApY" %}
-{% include youtube.html id="PbT-zGmhfZg" %}
+`youtube:https://www.youtube.com/embed/sD84oesqApY`
+
+`youtube:https://www.youtube.com/embed/zGmhfZg`
+
   
 ## 5. 숙소 체크인, 마사지
 

@@ -30,7 +30,8 @@ description: "모알 보알 다이빙 2일차. Tongo, Kasai Wall, Dolphin House 
 이번 다이빙은 조류가 엄청 강했다. 내려가는 지점을 잘못 선택하여,   
 팁상어를 보기 위해서는 조류를 거슬러야 했다. ㅠ_ㅠ 
 
-{% include youtube.html id="w9Ib6YdTmzE" %}
+`youtube:https://www.youtube.com/embed/w9Ib6YdTmzE`
+
 (카메라를 안가지고 내려가서, 일행분께 동영상을 받아 올림..)
 
 그 후에는 내가 가장 좋아하는 다이빙 조류 속 월다이빙이 이어졌다.  
@@ -62,7 +63,8 @@ description: "모알 보알 다이빙 2일차. Tongo, Kasai Wall, Dolphin House 
 점심 식사 후, Dolphin 리조트 앞바다 포인트로 세번째 다이빙을 출발했다.  
 바람도 많이 약해졌고, 조류도 많이 약해졌고, 여러모로 다이빙 하기 좋은 날씨!
 
-{% include youtube.html id="xseShIVIFg8" %}
+`youtube:https://www.youtube.com/embed/xseShIVIFg8`
+
 (포인트로 이동중.. 다이빙 할때 가장 설레는 순간!)
 
 무난하게 월다이빙을 했고, 큼지막한 구멍들을 구경하는 재미가 있는 포인트였다.  
@@ -77,16 +79,19 @@ description: "모알 보알 다이빙 2일차. Tongo, Kasai Wall, Dolphin House 
 ![월](https://lh3.googleusercontent.com/7J34d262zeIX11LVcfqoe2qRK9rBn2wMzReaIL9MGzSZGNzUip3bQKWYyosv5jRbFbAV5FGVRwuawgM2tfso1_Rgs0dyj8ifzFJ8TJbHCtuS-BC8pX9i2jE6IUS-QOzTkqCNxF9xF8QTytcves9qz8GTRUeeG0aUz_PAVZTJEC8nKo9q3DIJ_1ijc-jLwkTS4c1G0RS6Jjl3VvOS7BQYJYws-OLEz4zRBvnJ_1V6FrI_8iAAQxfbKuN7qIdPkF-55qLMfnH-lYpf7Z8bWYw9GbEaE9rex4fXSzdaKvASHIVw6ylF41emlu3G7ajIsUwiM7yF9t0-2MKTEx9ymMU0Cls9y8l3386dxHrJxaO1Tld-wz3rKNWBcjLxIdS5Bzxm1J5UBem97QnJ5i9YtiQIzdAE6VQfUzB5LeOTMahgJTpDNayojpge7x4ctNhOjv__BTjCjQL-BU_tAE2G-lZxQW7qh0pbNG3bE6-99nf2b4jAqwCfwOTjHSrwVE52_S4SFuBYvAKRqnQuR5aRGDM_LlUE7epBNmI_C3hSDGaVq-yEUZgDBTMmrUK-19VpfhOIigHbzbjE6Oh65Sr41LIZSUll7cAqy7mpNrDNS6TWK5wafVERzZA5d7KA-OjdnN1H77cWtH3A_hOlWqfvdkfjy6diao70Qijq=w600-h450-no)
 (엎드려서 촬영해본 월과 수면의 빛.. 월 사진은 항상 보이는 것의 10%도 나오지 않아 아쉽다....)  
 
-{% include youtube.html id="hPoOTpO6ZMk" %}  
+`youtube:https://www.youtube.com/embed/hPoOTpO6ZMk`
+
 (열대어 떼와 들었는데 이름을 까먹었지만.. 반짝이는게 신기한 놈들)  
 
 출수 하기 전 월에서 올라오는 슬로프에 산호 군락이 예쁘게 형성되어있었다.
 ![산호](https://lh3.googleusercontent.com/_mu-97F1lQq3xbedJ8ETcS3IF58EZOI6AowzeirofLHF5UmacoQPEc7bFwyb7t6s3DzG4ex4PkB_hkM57CwyzJkB4WaJuXFyrcN2NYMuZxN9MXk4h7fI0XZJdQXUppPRxNyJKDv9-czsY6SYOxVY68pd4mwx3Fa-vMPPpcM9lGHE6zOL05t3pF2YXPvQhENy-5BhmYX_oZFkDk__tdQrsWXrxJFj3lFcc6Jsnh7vu4J9TqqFJW688sEOCJx9tJHb49MiqX3A4CwkKQEw1bl3w18xSOStoSP7FZ3OH59p71Iqv9a2EN9HIvJgec6reiES_oKWlExYJXHpFXLsLvX8XlwRZOSMrU_K8Iq3LVLeARzuv7eLX7NX5uLSIWigNHbVO1npKqz2aOg4JAmbwOXrSmOBBv_I1rS-trtHi5ZcqEWiOjgCz6Q0qGiCySS-IZ2hQLSUw2AVmv5-LlNsGmIYmcrZhkabrtwy9XqJYK10pEDhFquPQYrZoSKnhGjGOOzajlULtD82UVLp9ADOi4OPBdoA3bq-cGwj8wyqQbJuTM4kJ7HjqV7-EjbJgMd0bsYfhXunl0jGfLi3gw_gfTvKRUGY0PftM4K3szk8wStMfnh6j1QmEPwKDzpT6JPhPOQi1gQnLmf2W4h-bJ4T-czQy6o7y5wAqMXc=w297-h222-no)
 ![산호2](https://lh3.googleusercontent.com/He2oBhIjcNZtofA1a3p8UdkIusrLbQI3A9ssxyOhctOq29UckzrstRIDJ88hoSA6toRoVeCwmslxEyg7Naz9bBMsJF61jaSDpXGbHs1IUH4IA89P3CCJW6SJr3Dgn3dHadm8JXGLrDRUUpXi-PQAlGI7gkJ3MB8rVIGzZzSim3NihE3MdWTrE2MBlGJgkox1JuDyTk0xHhR2Z-oLT29wjoWz4qLaYjTP7pbZYPCZm_BDbVXlkyxaOgXvZZo1rgUOfNGFNX5TjY5_aAXbeQWBhgIdMae8GiHo0yxh-g264dhpbjS9RKMpTeNp8OgCnYEjOnKw7TAGhB0-E8bNgjrK5f1bfRH-F6a-ZqxEejczwSCFiH3qT3Zb0bCAv_mr1hnj5V3BbMcetSEPir8k8n2QY8nFK1ZbjHRmHgjmMF2JuTPehcWbUlRGs6VuQFGFz-DUupyOGAgwRGuxA3Z4UjgMHYX5TZ2v8MoaZAYeSSqMebvFqr9NvGArsDmR06wOXck2w1KE0_U_2lSwoQtShIXE3ZBWMUxiIAaDuol0qhjmJenXySB3jex1V6PJv24emDhA4-XU6aXEMuFBFG8AIZEaQmQRzYTNGxVRUk88iO2Ng1_P2SNvHr1-aPEt8FxNOfj3Xlu-1TpgoddGJ2HvO-EECdsXrNYy84Lx=w600-h450-no)
 ![아네모네](https://lh3.googleusercontent.com/oUJ_JFnSMGuGGG9PJVjXYJQc0Tt6f6lMMaRs563NBkWdMemtfwIPpxZGdUCUau1S6nW32C8RojJpB5wevwkFYtQxumFbRuz8dcHQ1cNUMDtxsVGmsJIY1f-tsJc4ER4QtxKu_ty_vFhJcFNoCVkXG43SYO_agZgfW7EolgMPRdjRM8Xbo-i0oahdooWq7MLU4no-NWyUM-U7HxPQcOVp7LMEqdbSuOD2A6tonVel7Xnf5JKkiiyXA9_wXHwvoj4hlDcPw2PNhtOzLd-lTn0fG9a3lo3U1CcvI-ahEyh1skYCPsSsjzxKbpO2vUuOmvJqW1pOGgCYjcjKCkUA0EeuQ8K6gSm7c5X7ObUsujYch17H94LjsibBte3OavnZIdSj7yfF9cjKrHbM3jDJbcnPmQFNi-HZqXbi8ffKK1M6k1mXmIgI91uNmApxOzYrEW5_ewkzVUGmcjX6hnsTf1mjkc9oL2jmYeGpzCP7T7252pX_aqR0aoWI1lR0Gy4fxY-poH5rH6Nk0_K4xcFmyiMsAnAYfJ2kmIBDiQQ6XCZVn_blO8ZcuV7oLJ5UOmNqPALiouPmrxtrRwyveWqPtudL3sz_BGdZE9hQpm_BzPFnXLnG3AA6NpvR1CHXYv64VkkS1iAAiqAYAFZWB7HhbWrImdeE0obU1xDx=w600-h450-no)
-{% include youtube.html id="wGv8qa-M96o" %}
+
+`youtube:https://www.youtube.com/embed/wGv8qa-M96o`
+
 (역시 안전정지에는 쓸데없는 짓을 해야지!)  
-<br /><br /> 
+
   
   
 ## 5. 마사지 그리고 저녁식사
