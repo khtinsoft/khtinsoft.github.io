@@ -18,7 +18,8 @@ description: "Docker, Docker Compose를 활용하여, Django/Celery/Maria DB/Red
 
 ## Introduction
 
-Docker를 사용하여 로컬에 개발 환경을 만들어 사용하는 방식이 대부분 업계 표준으로 자리 잡고 있는 듯 하고, 더 나아가 실제 서비스 배포에까지 적용하는 곳이 점점 늘어나고 있는 듯 한다. 
+Docker를 사용하여 로컬에 개발 환경을 만들어 사용하는 방식이 대부분 업계 표준으로 자리 잡고 있는 듯 하고,  
+더 나아가 실제 서비스 배포에까지 적용하는 곳이 점점 늘어나고 있는 듯 하다. 
 
 이번 포스트에서는, Docker 및 Docker Compose 로 Django Project의 개발 환경을 만들고, 개발에 사용하기 위한 방법을 소개한다.
 
@@ -26,6 +27,7 @@ Docker를 사용하여 로컬에 개발 환경을 만들어 사용하는 방식�
 ## Prerequisites
 
 이 포스트에서는 Django, Celery, Maria DB, Redis의 4가지 서비스를 서버 어플리케이션을 위해 적용한다.
+
 각각은 서버 내에서 다음의 역할을 수행한다.
 
 > #### Django 
@@ -35,19 +37,18 @@ Docker를 사용하여 로컬에 개발 환경을 만들어 사용하는 방식�
 > #### Maria DB
 > MySQL과 거의 호환 가능한 Open Source Database
 > #### Redis
-> Redis는 매우 경량화된 In-Memory Database이다. 필자는 Django Project 내에서 Cache의 목적으로 Redis를 주로 활용하며, Django Application과 Celery간의 통신을 위한 Message Broker로 Redis를 활용한다.
-
+> Redis는 매우 경량화된 In-Memory Database이다. 필자는 Django Project 내에서 Cache의 목적으로 Redis를 주로 활용하며,  
+> Django Application과 Celery간의 통신을 위한 Message Broker로 Redis를 활용한다.
 
 아래 작성되는 내용들은 Github Repository [khtinsoft/django-celery-dockerize](https://github.com/khtinsoft/django-celery-dockerize)의 단계별 Commit을 통해 확인할 수 있다.
-
  
 ## Docker Compose 파일의 구성
 [참조 Commit: 984610c359f0aa0fb54e2fe3a033d096115393cd](https://github.com/khtinsoft/django-celery-dockerize/commit/984610c359f0aa0fb54e2fe3a033d096115393cd)
 
-Docker Compose는 다수의 Docker Container를 한번에 관리할 수 있는 툴이다. 
+Docker Compose는 다수의 Docker Container를 한번에 관리할 수 있는 툴이다.   
 프로젝트 단위로 Docker Compose 파일을 구성하고, 이를 통해 Container 들을 관리하면 매우 편리하다.
 
-프로젝트 루트 폴더 내에 docker-compose.yml 아래와 같이 생성한다.
+프로젝트 루트 폴더 내에 docker-compose.yml 아래와 같이 생성한다.  
 **sample-project** 라는 프로젝트 Namespace를 가정하며, Django Project 이름은 **sample_project** 이다. 
 
 ```yml
@@ -159,8 +160,9 @@ volumes:  # Container 들에서 사용되는 Volume을 정의한다.
     sample-project-cache-volume: {}
     sample-project-media: {}
 ```
-Container 들에서 사용할 Network / Volume 정보를 설정한다. 이 설정에서는 각 컨테이너는 172.20.1.x 의 IP 주소를 가지며, 
-sample-project-db-volume, sample-project-cache-volume, sample-project-media-volume 3가지의 Volume을 마운트 시켜 사용할 수 있다.
+Container 들에서 사용할 Network / Volume 정보를 설정한다. 이 설정에서는 각 컨테이너는 172.20.1.x 의 IP 주소를 가지며,   
+**sample-project-db-volume**, **sample-project-cache-volume**, **sample-project-media-volume**  
+3가지의 Volume을 마운트 시켜 사용할 수 있다.
 
 
 ```yml
@@ -185,8 +187,11 @@ sample-project-db:
         sample-project-net:
             ipv4_address: 172.20.1.2
 ```
-Database Service를 정의한다. sample_database라는 이름의 database를 생성하고, _sample_//_samplepassword의_ 인증 정보를 설정한다. 
-mple-project-db-volume 이라는 Docker Volume을 /var/lib/mysql 폴더로 마운트 시킴으로써, Container를 종료하고 다시 시작해도, Database 가 초기화 되지 않도록 한다
+Database Service를 정의한다. sample_database라는 이름의 database를 생성하고,  
+_sample_//_samplepassword의_ 인증 정보를 설정한다.  
+sample-project-db-volume 이라는 Docker Volume을 /var/lib/mysql 폴더로 마운트 시킴으로써,  
+Container를 종료하고 다시 시작해도, Database 가 초기화 되지 않도록 한다
+
 ```yml
 sample-project-cache:
     image: redis:5.0.3-alpine
@@ -204,7 +209,9 @@ sample-project-cache:
         sample-project-net:
             ipv4_address: 172.20.1.3 
 ```
+
 Redis Service를 정의한다. _samplepassword_ 의 인증 정보를 설정한다.
+
 ```yml
 sample-project:
     build:
@@ -226,9 +233,10 @@ sample-project:
         - .:/sample-project/sample-project
         - sample-project-media-volume:/sample-project/sample-project-media:Z
 ```
-Django Server를 실행한다. Container내의 /sample-project/sample-project 폴더에 서버 파일들을 마운트하고, 실행되도록 한다.
-sample-project-db 와 sample-project-cache를 Link 하여, 프로젝트 내에서 참조할 수 있도록 한다.
-sample-project-media-volume을 /sample-project/sample-project-media 로 마운트 하여 프로젝트 내에서 사용한
+Django Server를 실행한다. Container내의 /sample-project/sample-project 폴더에 서버 파일들을 마운트하고, 실행되도록 한다.  
+sample-project-db 와 sample-project-cache를 Link 하여, 프로젝트 내에서 참조할 수 있도록 한다.  
+sample-project-media-volume을 /sample-project/sample-project-media 로 마운트 하여 프로젝트 내에서 사용한다.
+
 ```yml
 sample-project-task:
     build:
@@ -250,11 +258,14 @@ sample-project-task:
         - .:/sample-project/sample-project
         - sample-project-media-volume:/sample-project/sample-project-media:Z
 ```
-Celery Worker를 실행한다. 한가지 특이한 부분은, celery 실행 커맨드를 Django Custom Command(python3 manage.py celery) 
-이와 관련된 내용은 여기를 통해 확인할 수 있다.
-만약 이와 같이 설정하기를 원치 않는다면, **celer -A sample_project worker** 로 대체할 수 있다
-> sample-project, sample-project-task 서비스에서 사용되는 도커 이미지는 Custom 이미지를 사용한다.
-> Ubuntu 18.04 이미지에 Python 3, libmysqlclient 등 필요한 모듈들을 설치하여 이미지를 생성한다.
+Celery Worker를 실행한다.  
+한가지 특이한 부분은, celery 실행 커맨드를 Django Custom Command(python3 manage.py celery)로 설정한 부분이다. 
+이와 관련된 내용은 [Django/Celery 개발 환경 사용 시 Celery Auto Restart (Auto Reload) 적용하기](/posts/django-celery-auto-restart/) 포스트에 소개한다.
+
+만약 이와 같이 설정하기를 원치 않는다면, `celer -A sample_project worker` 로 대체할 수 있다.
+
+sample-project, sample-project-task 서비스에서 사용되는 도커 이미지는 Custom 이미지를 사용한다.
+Ubuntu 18.04 이미지에 Python 3, libmysqlclient 등 필요한 모듈들을 설치하여 이미지를 생성한다.
 
 ```docker
 # docker/Dockerfile
@@ -342,7 +353,7 @@ DATABASES = {
 }
 ```
 
-docker-compose.yml 파일 내에서 Maria DB 서비스 컨테이너를 `sample-project-db`로 연결해두었기 때문에, 해당 이름을 사용한다.
+docker-compose.yml 파일 내에서 Maria DB 서비스 컨테이너를 `sample-project-db`로 연결해두었기 때문에, 해당 이름을 사용한다.  
 자세한 설정은 [Django 공식 문서][djangodb]를 참고한다.
 
 #### Redis 설정
@@ -358,7 +369,7 @@ CACHES = {
     }
 }
 ```
-Django Redis를 사용하여 Cache를 설정한다. 마찬가지로, `sample-project-cache` 라는 이름으로 연결한다.
+Django Redis를 사용하여 Cache를 설정한다. 마찬가지로, `sample-project-cache` 라는 이름으로 연결한다.  
 자세한 설정은 [Django 공식 문서][djangocache] 및 [Django Redis][djangoredis]를 참고한다. 
 
 
@@ -400,9 +411,8 @@ __all__ = ('celery_app',)
 CELERY_BROKER_URL = 'redis://:samplepassword@sample-project-cache:6379/0'
 ```
 
-docker-compose.py 내에 설정한 Redis 링크 이름 및 비밀번호를 통해 Celery가 Message Broker로 Redis를 사용하도록 한다.
-
-세부 적인 설정 방법은 [Celery Django 공식 문서][celerydjango] 및 [Celery Configuration 문서][celeryconfig]
+docker-compose.py 내에 설정한 Redis 링크 이름 및 비밀번호를 통해 Celery가 Message Broker로 Redis를 사용하도록 한다.  
+세부 적인 설정 방법은 [Celery Django 공식 문서][celerydjango] 및 [Celery Configuration 문서][celeryconfig]를 참고한다.
 
 
 ## 프로젝트 실행
@@ -422,7 +432,7 @@ $ docker-container down -v // 컨테이너 종료 및 볼륨 종료, Database �
 
 ## Trouble Shootings
 
-만약 아래와 같은 에러가 출력된다면, Ctrl + C를 통해 컨테이너들을 종료하고 다시 실행한다.`
+만약 아래와 같은 에러가 출력된다면, Ctrl + C를 통해 컨테이너들을 종료하고 다시 실행한다.  
 (mysql에 데이터베이스가 생성되는 동안, django 프로젝트가 실행된 것이다..)
 
 ```bash
