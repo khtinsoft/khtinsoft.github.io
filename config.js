@@ -28,7 +28,7 @@ module.exports = {
     bio: 'Gelato Lab Inc',
     contacts: {
       email: 'khtinsoft@gmail.com',
-      github: 'https://github.com/khtinsoft/',
+      github: 'khtinsoft',
     }
   }
 };
