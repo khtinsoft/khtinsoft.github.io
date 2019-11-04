@@ -1,16 +1,17 @@
 ---
 title: "Docker MySQL, Postgresql Multiple Databases"
-date: "2019-05-07"
+date: "2019-11-05"
 template: "post"
 draft: false
-slug: "/posts/system/docker-ps-command"
+slug: "/posts/system/docker-multiple-databases"
 category: "System"
 tags:
   - "Docker"
   - "Docker Compose"
   - "Docker Container"
   - "MySQL"
-  - "Postgresql"
+  - "Postgres"
+  - "Multiple Databases"
 description: "Docker MySQL, Postgresql에서 Multiple Database 사용하기"
 ---
 
