@@ -9,6 +9,7 @@ const Layout = ({ children, title, description }) => (
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="naver-site-verification" content="afc2fad93034344208fd7c386af1f9cde4eb15d5" />
+      <script data-ad-client="ca-pub-1302277186878877" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </Helmet>
     {children}
   </div>
