@@ -11,13 +11,14 @@ const PostTemplate = ({ data }) => {
 
   const {
     title: postTitle,
-    description: postDescription
+    description: postDescription,
+    tags: postTags
   } = data.markdownRemark.frontmatter;
 
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
+    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} tags={postTags}>
       <Post post={data.markdownRemark} />
     </Layout>
   );
